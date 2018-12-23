@@ -1,0 +1,15 @@
+[Unit]
+Description=GPIO-Switcher service
+After=volumio.service
+
+[Service]
+Type=simple
+RestartSec=3
+#StartLimitBurst=5
+#StartLimitIntervalSec=0
+User=volumio
+WorkingDirectory=/home/volumio/gpio-switcher
+ExecStart=/usr/local/bin/node /home/volumio/gpio-switcher/index.js
+
+[Install]
+WantedBy=multi-user.target

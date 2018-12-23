@@ -1,0 +1,17 @@
+{
+  "name": "gpio-switcher",
+  "version": "0.0.1",
+  "description": "App for switching RPi GPIO state when event from Volumio WS comes",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "config": "^3.0.0",
+    "rpio": "^1.0.11",
+    "socket.io-client": "^2.2.0"
+  },
+  "author": "Radek Rada",
+  "license": "MIT"
+}

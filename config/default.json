@@ -1,0 +1,16 @@
+{
+  "Switcher": {
+    "GPIO": {
+      "pin": 7,
+      "initState": 1
+    },
+    "Timers": {
+      "onStop": 15,
+      "onInactive": 10
+    },
+    "Volumio": {
+      "inactiveEvents": ["stop", "pause"],
+      "inactiveTime":300 
+    }
+  }
+}
